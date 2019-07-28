@@ -1,0 +1,15 @@
+[package]
+name = "hyper-v-sys"
+version = "0.1.0"
+authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
+edition = "2018"
+links = "vid"
+repository = "https://github.com/Wenzel/hyper-v-sys"
+readme = "README.md"
+keywords = ["hyper-v"]
+description = "Rust bindings for Hyper-V"
+license = "GPL-3.0-only"
+licence-file = "LICENSE"
+
+[build-dependencies]
+bindgen = "0.49.2"
