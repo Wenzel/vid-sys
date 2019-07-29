@@ -9,7 +9,6 @@ readme = "README.md"
 keywords = ["hyper-v"]
 description = "Rust bindings for Hyper-V"
 license = "GPL-3.0-only"
-licence-file = "LICENSE"
 
 [build-dependencies]
 bindgen = "0.49.2"
