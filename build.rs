@@ -15,6 +15,8 @@ fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("src/wrapper.h")
+        // specify Clang target
+        .clang_arg("--target=x86_64-pc-windows-msvc")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
