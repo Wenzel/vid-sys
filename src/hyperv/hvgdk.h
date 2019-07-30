@@ -37,7 +37,7 @@ Author:
 //
 // Define a 128bit type.
 //
-typedef struct DECLSPEC_ALIGN(16) _HV_UINT128 {
+typedef struct __declspec(align(16)) _HV_UINT128 {
 
     UINT64  Low64;
     UINT64  High64;
@@ -50,8 +50,8 @@ typedef struct DECLSPEC_ALIGN(16) _HV_UINT128 {
 //
 #define HV_CALL_ALIGNMENT   8
 
-#define HV_CALL_ATTRIBUTES DECLSPEC_ALIGN(HV_CALL_ALIGNMENT)
-#define HV_CALL_ATTRIBUTES_ALIGNED(__alignment__) DECLSPEC_ALIGN(__alignment__)
+#define HV_CALL_ATTRIBUTES __declspec(align(HV_CALL_ALIGNMENT))
+#define HV_CALL_ATTRIBUTES_ALIGNED(__alignment__) __declspec(align(__alignment__))
 
 //
 // Memory Types
@@ -848,7 +848,7 @@ typedef union _HV_X64_FP_MMX_REGISTER
     UINT64              Mmx;
 } HV_X64_FP_MMX_REGISTER, *PHV_X64_FP_MMX_REGISTER;
 
-typedef DECLSPEC_ALIGN(16) union _HV_X64_FX_REGISTERS
+typedef __declspec(align(16)) union _HV_X64_FX_REGISTERS
 {
     struct
     {
@@ -1027,7 +1027,7 @@ typedef struct _HV_STATISTICS_GROUP_VERSION
 //
 // Group header
 //
-typedef struct DECLSPEC_ALIGN(2) _HV_STATISTICS_GROUP_HEADER
+typedef struct __declspec(align(2)) _HV_STATISTICS_GROUP_HEADER
 {
 
     HV_STATISTICS_GROUP_TYPE    Type;
