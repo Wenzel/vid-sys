@@ -16,6 +16,7 @@
 
 - `cargo`
 - `rustc`
+- [`LLVM`](http://releases.llvm.org/) (tested on `v8.0.0`)
 
 ## Maintainers
 
@@ -30,4 +31,3 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 ## License
 
 [GNU General Public License v3.0](https://github.com/Wenzel/pyvmidbg/blob/master/LICENSE)
-
