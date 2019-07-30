@@ -15,6 +15,7 @@ fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("src/wrapper.h")
+		.whitelist_function("Vid.*")
         // specify Clang target
         .clang_arg("--target=x86_64-pc-windows-msvc")
         // format
