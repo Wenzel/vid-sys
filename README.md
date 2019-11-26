@@ -1,6 +1,8 @@
 # vid-sys
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![tokei](https://tokei.rs/b1/github/Wenzel/vid-sys)](https://github.com/Wenzel/vid-sys)
+[![repo size](https://img.shields.io/github/repo-size/Wenzel/vid-sys)](https://github.com/Wenzel/vid-sys)
 
 > Rust unsafe bindings for Vid API (Hyper-V)
 
