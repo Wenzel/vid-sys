@@ -1,13 +1,13 @@
 [package]
-name = "hyper-v-sys"
+name = "vid-sys"
 version = "0.1.0"
 authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
 edition = "2018"
 links = "vid"
-repository = "https://github.com/Wenzel/hyper-v-sys"
+repository = "https://github.com/Wenzel/vid-sys"
 readme = "README.md"
 keywords = ["hyper-v"]
-description = "Rust bindings for Hyper-V"
+description = "Rust unsafe bindings for Vid API (Hyper-V)"
 license = "GPL-3.0-only"
 
 [build-dependencies]
