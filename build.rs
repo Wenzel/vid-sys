@@ -7,6 +7,11 @@ fn main() {
 
     // what library to link with
     println!("cargo:rustc-link-lib=dylib=vid");
+    let deprecated_define = if cfg!(feature = "deprecated-apis") {
+        "-DVID_DEPRECATED"
+    } else {
+        ""
+    };
 
     // The bindgen::Builder is the main entry point
     // to bindgen, and lets you build up options for
@@ -15,7 +20,9 @@ fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("src/wrapper.h")
-		.whitelist_function("Vid.*")
+        // deprecated APIs ?
+        .clang_arg(deprecated_define)
+        .whitelist_function("Vid.*")
         // specify Clang target
         .clang_arg("--target=x86_64-pc-windows-msvc")
         // format

@@ -12,3 +12,7 @@ license = "GPL-3.0-only"
 
 [build-dependencies]
 bindgen = "0.52.0"
+
+[features]
+# Deprecated APIs
+deprecated-apis = []
