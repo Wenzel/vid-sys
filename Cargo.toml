@@ -11,7 +11,7 @@ description = "Rust unsafe bindings for Vid API (Hyper-V)"
 license = "GPL-3.0"
 
 [build-dependencies]
-bindgen = "0.52.0"
+bindgen = "0.71.1"
 
 [features]
 # Deprecated APIs
