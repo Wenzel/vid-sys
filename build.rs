@@ -4,10 +4,12 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-
     let project_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
     // what library to link with
-    println!("cargo:rustc-link-search={}", project_dir.join("lib").to_string_lossy());
+    println!(
+        "cargo:rustc-link-search={}",
+        project_dir.join("lib").to_string_lossy()
+    );
     println!("cargo:rustc-link-lib=dylib=vid");
     let deprecated_define = if cfg!(feature = "deprecated-apis") {
         "-DVID_DEPRECATED"
