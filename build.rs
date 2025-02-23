@@ -29,7 +29,6 @@ fn main() {
         .allowlist_function("Vid.*")
         // specify Clang target
         .clang_arg("--target=x86_64-pc-windows-msvc")
-        .rustfmt_bindings(true)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
