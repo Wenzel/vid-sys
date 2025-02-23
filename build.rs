@@ -26,7 +26,7 @@ fn main() {
         .header("src/wrapper.h")
         // deprecated APIs ?
         .clang_arg(deprecated_define)
-        .whitelist_function("Vid.*")
+        .allowlist_function("Vid.*")
         // specify Clang target
         .clang_arg("--target=x86_64-pc-windows-msvc")
         .rustfmt_bindings(true)
